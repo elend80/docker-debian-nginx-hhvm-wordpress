@@ -79,6 +79,9 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+define('WP_MEMORY_LIMIT', '64M');
+define('WP_MEMORY_MAX_LIMIT', '256M');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -89,5 +92,3 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 define('FS_METHOD', 'direct');
-
-define('WP_MEMORY_LIMIT', '256M');
